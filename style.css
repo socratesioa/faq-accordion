@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --dark-purple: #301534;
+  --white: #ffffff;
+  --pale-purple: #8b6990;
+  --light-pink: #f8eeff;
+  --pink: #ad28eb;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--dark-purple);
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--pale-purple);
+}
+
+hr {
+  border: 1px solid var(--light-pink);
+  margin: 20px 0;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--dark-purple);
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s ease-out;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 24px;
+}
+
+button:hover {
+  color: var(--pink);
+}
+
+main {
+  padding: 0 24px;
+}
+
+header {
+  height: 232px;
+  width: 100%;
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: -142.5px;
+}
+
+.faq-container {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  background-color: var(--white);
+  padding: 24px;
+  border-radius: 8px;
+  stroke: 1px solid var(--light-pink);
+  box-shadow: 0 32px 56px 0 rgba(80, 0, 118, 0.1);
+  margin-bottom: 142.5px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.panel {
+  margin-top: 24px;
+  display: none;
+}
+
+.btn-icon {
+  color: var(--pink);
+}
+
+@media (min-width: 768px) {
+  header {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    margin-bottom: -167.5px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  hr {
+    margin: 24px 0;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  .faq-container {
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 167.5px;
+  }
+
+  .heading {
+    margin-bottom: 32px;
+  }
+
+  .star-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
