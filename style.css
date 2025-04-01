@@ -109,6 +109,7 @@ header {
   header {
     background-image: url("./assets/images/background-pattern-desktop.svg");
     margin-bottom: -167.5px;
+    height: 320px;
   }
 
   h1 {
